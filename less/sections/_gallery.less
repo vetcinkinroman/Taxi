@@ -1,0 +1,143 @@
+.gallery {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  text-align: center;
+}
+
+.padding {
+  padding: 45px;
+}
+
+.gallery-title {
+  position: relative;
+  max-width: 286px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  color: #181818;
+  line-height: 0.8;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: '';
+    border-bottom: 8px solid #ffcd1f;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 4px;
+
+    @media all and(max-width: 992px) {
+      border-bottom: 6px solid #ffcd1f;
+    }
+
+    @media all and(max-width: 768px) {
+      border-bottom: 4px solid #ffcd1f;
+    }
+
+    @media all and(max-width: 576px) {
+      border-bottom: 3px solid #ffcd1f;
+      border-radius: 3px;
+    }
+  }
+
+  @media all and(max-width: 992px) {
+    font-size: 24px;
+    max-width: 230px;
+  }
+
+  @media all and(max-width: 768px) {
+    font-size: 20px;
+    max-width: 190px;
+  }
+
+  @media all and(max-width: 576px) {
+    font-size: 18px;
+    max-width: 170px;
+  }
+}
+
+.right-arrow {
+  position: absolute;
+  height: 20px;
+  bottom: 50%;
+  right: 2%;
+  cursor: pointer;
+  transform: translateY(50%);
+}
+
+.left-arrow {
+  position: absolute;
+  height: 20px;
+  cursor: pointer;
+  bottom: 50%;
+  left: 2%;
+  transform: translateY(50%);
+  z-index: 5;
+}
+
+.gallery__block {
+  @media all and(max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+}
+
+.gallery__block-img {
+  position: relative;
+}
+
+.gallery__block-title {
+  font-size: 24px;
+  line-height: 1;
+  color: @title;
+  font-weight: 600;
+  text-align: center;
+
+  @media all and(max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.gallery__block-text {
+  font-size: 12px;
+  color: #969696;
+  line-height: 2;
+  text-align: center;
+  font-weight: 500;
+}
+
+.gallery__block-price--1 {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.gallery__block-price--2 {
+  background-color: #ffcd1f;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-paragraph {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.714;
+  color: @title;
+  font-weight: 500;
+  padding: 13px 15px;
+
+  @media all and(max-width: 768px) {
+    font-size: 12px;
+    padding: 13px 30px;
+  }
+}
+

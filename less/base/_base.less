@@ -1,0 +1,102 @@
+html, body {
+	height: 100%;
+	min-width: 320px;
+}
+
+html {
+	font-size: 10px;
+	line-height: 1.4;
+}
+
+body {
+	font-size: 1.6rem; /* 10px * 1.6 = 16px */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button {
+  border: none;
+  padding: 20px 55px;
+  font-weight: bold;
+  line-height: 2;
+  color: @button;
+  font-size: 18px;
+  border-bottom: 5px solid @yellow;
+  border-radius: 10px;
+  background-color: @button-2;
+  transition: .3s;
+  display: inline-block;
+  position: relative;
+  &:hover {
+    background-color: #bd9301;
+  }
+
+  &:hover i {
+    color: #000;
+  }
+
+  i {
+    //display: block;
+    color: transparent;
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .3s;
+  }
+
+  @media all and(max-width: 1200px) {
+    line-height: 1.8;
+    font-size: 16px;
+    padding: 15px 45px;
+  }
+
+  @media all and(max-width: 768px) {
+    line-height: 1.4;
+    font-size: 12px;
+    padding: 10px 35px;
+    border-bottom: 3px solid @yellow;
+  }
+
+  @media all and(max-width: 576px) {
+    border-bottom: 2px solid @yellow;
+    line-height: 1.2;
+    padding: 8px 25px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+@media only screen and (max-width : 1200px) {
+	
+}
+
+/* Medium Devices, Desktops - adaptive styles bofore 992px */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets - adaptive styles bofore 768px */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones - adaptive styles bofore 480px */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina - adaptive styles bofore 320px */
+@media only screen and (max-width : 320px) {
+
+}

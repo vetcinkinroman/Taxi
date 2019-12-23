@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<!-- Titles -->
+	<title>Taxi</title>
+	<meta name="keywords" content="Ключевые слова...">
+	<meta name="description" content="Описание страницы...">
+	
+	<!-- Syles -->
+	
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link rel="stylesheet" href="css/main.css">
+	
+	<!--fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,500i,600,600i,700,700i,800,800i,900,
+	900i&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/montserrat/stylesheet.css">
+	
+	<!-- FavIcons -->
+	<link rel="shortcut icon" href="img/favicons/favicon-48x48.ico" type="image/x-icon"/>
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+	
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+<!--[if lt IE 8]>
+<p class="browserupgrade">Вы используете <strong>устаревшую</strong> версию браузера. Пожалуйста <a
+	href="http://browsehappy.com/">обновите свой браузер</a>.</p>
+<![endif]-->
+
+<header class="header" style="background-image: url(img/Images/bg-1.jpg)">
+	<div class="container">
+   <!--head-->
+		<div class="head">
+			<div class="logo">
+				<a href="#">LOGO</a>
+			</div>
+			<div class="phone">
+				<img class="phone__img" src="img/Icons/phone.svg" alt="phone-icon">
+				<a class="phone__link" href="#">8(495)-115-18-18</a>
+			</div>
+		</div>
+    <!--//head-->
+    <!--navigation-->
+		<nav class="navigation">
+			<div class="navigation__toggle">
+				<i class="fas fa-bars"></i>
+			</div>
+			<ul class="navigation__list">
+				<li><a href="#">Главная</a></li>
+				<li class="sub"><a href="#">Услуги<i class="fas fa-chevron-down"></i></a>
+					<div class="hover">
+						<ul class="sub-menu">
+							<li><a href="#">Пункт 1</a></li>
+							<li><a href="#">Пункт 2</a></li>
+							<li><a href="#">Пункт 3</a></li>
+							<li><a href="#">Пункт 4</a></li>
+							<li><a href="#">Пункт 5</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Автопарк</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">Сертификаты</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+		<!--//navigation-->
+    <!--header-content-->
+		<div class="header-content">
+			<div class="header-content__text">
+				<div class="header-content__text-wrap">
+					<h1 class="header-content__text-title">Какой-то большой
+						<span>заголовок</span> под номером 1</h1>
+					<p class="header-content__text-subtitle">Какой-то определенный текст для описания главного
+						экрана сайта, какой-то конкрентной услуги, как
+						например аренда автомобиля и т.д.</p>
+				</div>
+				<button class="button">Взять в аренду<i class="fas fa-thumbs-up"></i></button>
+			</div>
+			<div class="header-content__img">
+				<img src="img/Images/main_image.png" alt="image">
+			</div>
+		</div>
+		<!--header-content-->
+	</div>
+</header>
+
+<section class="info">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="info-block">
+					<img id="Capa_1" class="sports-car" src="img/Icons/sports-car.svg" alt="sports-car-icon">
+					<h2 class="info-block__title">Новые желтые Volkswagen Polo</h2>
+					<p class="info-block__subtitle">В нашем парке более 100
+						собственных автомобилей такси</p>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="info-block">
+					<img class="speedometer" src="img/Icons/speedometer.svg" alt="speedometer-icon">
+					<h2 class="info-block__title">Подача автомобиля</h2>
+					<p class="info-block__subtitle">Подача автомобиля по
+						Москве  от 4 мин.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="info-block">
+					<img class="road-with-broken" src="img/Icons/road-with-broken-line.svg" alt="road-icon">
+					<h2 class="info-block__title">Движение по выделенным полосам</h2>
+					<p class="info-block__subtitle">Пробки не страшны, ведь на такси
+						вы можете двигаться по выделенной
+						полосе для автобусов.</p>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="info-block">
+					<img src="img/Icons/repair-tools.svg" alt="repair-tools-icon">
+					<h2 class="info-block__title">Безопасное такси</h2>
+					<p class="info-block__subtitle">Каждый автомобиль такси проходит
+						ежедневный технический осмотр, а
+						водители такси проходят медицинскую
+						проверку, каждый пассажир застрахован
+						на время поездки</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="causes">
+	<div class="causes-title">ТРИ ПРИЧИНЫ ВЫБРАТЬ НАС</div>
+	<div class="container">
+		<div class="causes-wrap">
+			<div class="row">
+      <!--block-1-->
+				<div class="col-sm-4">
+					<div class="causes__block causes__block-1">
+						<div class="causes__block-title">Причина номер 1</div>
+						<ul class="causes__block-list">
+							<li>Разъяснение причины номер один в
+								подробностях</li>
+							<li>Разъяснение причины номер один в
+								подробностях</li>
+							<li>Разъяснение причины номер один в
+								подробностях</li>
+							<li>Разъяснение причины номер один в
+								подробностях</li>
+							<li>Разъяснение причины номер один в
+								подробностях</li>
+							<li>Разъяснение причины номер один в
+								подробностях</li>
+						</ul>
+					</div>
+				</div>
+				<!--//block-1-->
+				<!--block-2-->
+				<div class="col-sm-4">
+					<div class="causes__block causes__block-2 causes__block-margin">
+						<div class="causes__block-title">Причина номер 2</div>
+						<ul class="causes__block-list">
+							<li>Разъяснение причины номер один в
+								подробностях</li>
+							<li>Разъяснение причины номер один в
+								подробностях</li>
+							<li>Разъяснение причины номер один в
+								подробностях</li>
+							<li>Разъяснение причины номер один в
+								подробностях</li>
+							<li>Разъяснение причины номер один в
+								подробностях</li>
+							<li>Разъяснение причины номер один в
+								подробностях</li>
+						</ul>
+					</div>
+				</div>
+				<!--//block-2-->
+				<!--block-2-->
+				<div class="col-sm-4">
+					<div class="causes__block causes__block-3">
+						<div class="causes__block-title">Причина номер 3</div>
+						<ul class="causes__block-list">
+							<li>Разъяснение причины номер один в
+								подробностях</li>
+							<li>Разъяснение причины номер один в
+								подробностях</li>
+							<li>Разъяснение причины номер один в
+								подробностях</li>
+							<li>Разъяснение причины номер один в
+								подробностях</li>
+							<li>Разъяснение причины номер один в
+								подробностях</li>
+							<li>Разъяснение причины номер один в
+								подробностях</li>
+						</ul>
+					</div>
+				</div>
+				<!--//block-3-->
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="video">
+	<div class="video-title">О НАШЕЙ КОМПАНИИ</div>
+	<div class="container">
+		<div class="video-wrap">
+			<div class="video-wrap__text">
+				<p class="video-wrap__text-1">Какой-то крупный текст о том,
+					почему мы заботимся о водителях, таксопарке,
+					являемся стратегическими партнерами тех или
+					иных агрегаторов и чем наша компания хороша.</p>
+				<p class="video-wrap__text-1 video-wrap__text-padding">Какой-то крупный текст о том,
+					почему мы заботимся о водителях, таксопарке,
+					являемся стратегическими партнерами тех или
+					иных агрегаторов и чем наша компания хороша.</p>
+			</div>
+			<div class="video-wrap__video">
+				<div class="play-img">
+					<img class="play-img__img" src="img/Images/previev.jpg" alt="img">
+				</div>
+				<img class="play-img__play" src="img/Icons/ellipse.png" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="require">
+	<div class="require-title">ЧТО НУЖНО ДЛЯ РАБОТЫ У НАС</div>
+	<div class="container">
+		<div class="require-subtitle">Автомобили для работы предоставляются на условиях аренды по фиксированной цене за
+			сутки.
+			Вы самостоятельно определяете свой график работы и регулируете количество заказов, которое готовы принять.
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="require__block-wrap">
+					<div class="require__block-title">Требования к кандидату</div>
+					<ul class="require__block-list">
+						<li>Водительский стаж не менее 3 лет.</li>
+						<li>Гражданство РФ.</li>
+						<li>Водительское удостоверение РФ категории В.</li>
+						<li>Хорошее знание г. Москвы и Московской области.</li>
+						<li>Аккуратный, плавный стиль вождения.</li>
+						<li>Внимательность, стрессоустойчивость.</li>
+						<li>Аккуратный внешний вид</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="require__block-wrap">
+					<div class="require__block-title">Условия работы</div>
+					<ul class="require__block-list">
+						<li>Автомобили Volkswagen Polo 2018 г. автомат</li>
+						<li>Лицензия на автомобиль для работы в такси</li>
+						<li>Автомобиль домашнего хранения</li>
+						<li>Арендная плата 1 500 рублей/сутки в зависимости
+							от оплаченного периода аренды
+						</li>
+						<li>Колонна расположена в СВАО г. Москвы</li>
+						<li>Подключение к диспетчерским, Яндекс, Gett,
+							Uber, СИТИМОБИЛ
+						</li>
+						<li>Возможно подключение к другим диспетчерским</li>
+						<li>ТО за счет компании.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="rent">
+	<div class="container">
+		<div class="rent-wrap">
+			<div class="rent-wrap__title">Какой-то определенный призывающий текст с восклицательным знаком!</div>
+			<div class="rent-wrap__subtitle">Наш  автопарк находится рядом с метро Ботанический сад</div>
+			<div class="button">Взять в аренду<i class="fas fa-thumbs-up"></i></div>
+		</div>
+	</div>
+</section>
+
+<section class="gallery">
+	<div class="gallery-title">НАШ АВТОПАРК</div>
+	<div class="container padding">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4">
+				<div class="gallery__block">
+					<div class="gallery__block-img">
+						<img class="right-arrow" src="img/Icons/right-arrow.svg" alt="car-img">
+						<img class="left-arrow" src="img/Icons/left-arrow.svg" alt="car-img">
+						<img class="car-img" src="img/Images/car.jpg" alt="car-img">
+					</div>
+					<h3 class="gallery__block-title">Аренда Toyota Camry</h3>
+					<p class="gallery__block-text">Класс автомобиля: Комфорт</p>
+					<div class="gallery__block-price">
+						<div class="gallery__block-price--1">
+							<p class="price-paragraph">Срок</p>
+							<p class="price-paragraph">Цена</p>
+						</div>
+						<div class="gallery__block-price--2">
+							<p class="price-paragraph">Сутки</p>
+							<p class="price-paragraph">2000Р</p>
+						</div>
+						<div class="gallery__block-price--1">
+							<p class="price-paragraph">Неделя</p>
+							<p class="price-paragraph">13000Р</p>
+						</div>
+						<div class="gallery__block-price--2">
+							<p class="price-paragraph">Месяц</p>
+							<p class="price-paragraph">53000Р</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="gallery__block">
+					<div class="gallery__block-img">
+						<img class="right-arrow" src="img/Icons/right-arrow.svg" alt="car-img">
+						<img class="left-arrow" src="img/Icons/left-arrow.svg" alt="car-img">
+						<img src="img/Images/car.jpg" alt="car-img">
+					</div>
+					<h3 class="gallery__block-title">Аренда Toyota Camry</h3>
+					<p class="gallery__block-text">Класс автомобиля: Комфорт</p>
+					<div class="gallery__block-price">
+						<div class="gallery__block-price--1">
+							<p class="price-paragraph">Срок</p>
+							<p class="price-paragraph">Цена</p>
+						</div>
+						<div class="gallery__block-price--2">
+							<p class="price-paragraph">Сутки</p>
+							<p class="price-paragraph">2000Р</p>
+						</div>
+						<div class="gallery__block-price--1">
+							<p class="price-paragraph">Неделя</p>
+							<p class="price-paragraph">13000Р</p>
+						</div>
+						<div class="gallery__block-price--2">
+							<p class="price-paragraph">Месяц</p>
+							<p class="price-paragraph">53000Р</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="gallery__block">
+					<div class="gallery__block-img">
+						<img class="right-arrow" src="img/Icons/right-arrow.svg" alt="car-img">
+						<img class="left-arrow" src="img/Icons/left-arrow.svg" alt="car-img">
+						<img src="img/Images/car.jpg" alt="car-img">
+					</div>
+					<h3 class="gallery__block-title">Аренда Toyota Camry</h3>
+					<p class="gallery__block-text">Класс автомобиля: Комфорт</p>
+					<div class="gallery__block-price">
+						<div class="gallery__block-price--1">
+							<p class="price-paragraph">Срок</p>
+							<p class="price-paragraph">Цена</p>
+						</div>
+						<div class="gallery__block-price--2">
+							<p class="price-paragraph">Сутки</p>
+							<p class="price-paragraph">2000Р</p>
+						</div>
+						<div class="gallery__block-price--1">
+							<p class="price-paragraph">Неделя</p>
+							<p class="price-paragraph">13000Р</p>
+						</div>
+						<div class="gallery__block-price--2">
+							<p class="price-paragraph">Месяц</p>
+							<p class="price-paragraph">53000Р</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	<div class="button">Взять в аренду<i class="fas fa-thumbs-up"></i></div>
+</section>
+
+<section class="payment">
+	<div class="payment-wrap">
+		<div class="payment-wrap__title">ПОДКЛЮЧАЕМ К ЗАКАЗАМ</div>
+		<div class="payment-wrap__subtitle">Мы поможем вам установить приложения такси, настроить их и как можно быстрее
+			получить первые заказы.
+		</div>
+	</div>
+	<div class="container">
+		<div class="payment-wrap__img">
+			<img class="ya-taxi" src="img/Icons/ya-taxi-logo.png" alt="ya-taxi-img">
+			<img class="citymobil" src="img/Icons/citimobil.png" alt="citymobil-logo-img">
+		</div>
+	</div>
+</section>
+
+<section class="slider">
+	<div class="slider__title">ОТЗЫВЫ НАШИХ ВОДИТЕЛЕЙ</div>
+	<div class="container">
+		<div class="slider-wrap">
+			<div class="slider-wrap__text">
+				<img class="left-arrow-2" src="img/Icons/left-arrow-2.svg" alt="left-arrow-icon">
+				<img class="right-arrow-2" src="img/Icons/right-arrow-2.svg" alt="right-arrow-icon">
+				<P class="slogan">Один из хороших отзывов о работе в компании,
+					где перечисленны причины работы в этой компании,
+					какие условия труда обеспечиваются, насколько хорош автопарк
+					и как водитель сильно им доволен и т.п.</P>
+			</div>
+			<div class="slider-wrap__img">
+				<div class="slider-wrap__img-content">
+					<img class="slider-wrap__img-img men-1" src="img/Images/men-1.jpg" alt="men-img">
+					<p class="men-1-text">Иванов Иван Иванович</p>
+				</div>
+				<div class="slider-wrap__img-content">
+				  <img class="slider-wrap__img-img men-2" src="img/Images/men-1.jpg" alt="men-img">
+					<p class="men-2-text">Иванов Иван Иванович</p>
+				</div>
+				<div class="slider-wrap__img-content">
+				  <img class="slider-wrap__img-img men-3" src="img/Images/men-1.jpg" alt="men-img">
+					<p class="men-3-text">Иванов Иван Иванович</p>
+				</div>
+				<div class="slider-wrap__img-content">
+				  <img class="slider-wrap__img-img men-2" src="img/Images/men-1.jpg" alt="men-img">
+					<p class="men-2-text">Иванов Иван Иванович</p>
+				</div>
+				<div class="slider-wrap__img-content">
+				  <img class="slider-wrap__img-img men-1" src="img/Images/men-1.jpg" alt="men-img">
+					<p class="men-1-text">Иванов Иван Иванович</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="map">
+	<div class="map__title">КАК НАС НАЙТИ</div>
+	<div class="map__img">
+		<img class="map__img-marker" src="img/Icons/map-marker-alt.svg" alt="map-img">
+		<img src="img/Images/Black-&-White%20.jpg" alt="map-img">
+	</div>
+</section>
+
+<section class="address">
+	<div class="container">
+			<div class="col-md-6">
+				<div class="address__block">
+					<div class="address__block-address">
+						<h3>АДРЕС</h3>
+						<P>Москва, ул. Докукина дом 17 стр. 4,  офис №1<br>
+							Метро Ботанический сад</P>
+					</div>
+					<div class="address__block-phone">
+						<h3>ТЕЛЕФОН</h3>
+						<a href="tel:+78(495)- 115-18-18">8(495) -115-18-18</a>
+					</div>
+					<div class="address__block-email">
+						<h3>E-MAIL</h3>
+						<a href="mailto:taxi1151818@yandex.ru">taxi1151818@yandex.ru</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<form id="contact-form" class="contact-form">
+					<div class="input-form">
+						<div class="input-form-block-1">
+							<img class="user-img" src="img/Icons/user.svg" alt="email-icon">
+							<input type="text" class="contact-form__input user" name="name" placeholder="Ваше имя">
+						</div>
+						<div class="input-form-block-2">
+							<img class="envelope-img" src="img/Icons/envelope.svg" alt="email-icon">
+							<input type="text" class="contact-form__input envelope" name="email" placeholder="Ваш E-mail">
+						</div>
+					</div>
+					<textarea class="contact-form__textarea" placeholder="Ваше сообщение" name="message"></textarea>
+				</form>
+			</div>
+		</div>
+</section>
+
+<footer>
+	<div class="container">
+		<div class="footer">
+		<div class="copyright">&copy;2019. Taxi-avi.</div>
+		<div class="link">taxi1151818@yandex.ru</div>
+		</div>
+	</div>
+</footer>
+
+<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
